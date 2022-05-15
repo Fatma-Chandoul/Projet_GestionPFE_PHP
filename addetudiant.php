@@ -1,0 +1,10 @@
+<?php
+session_start();
+require_once("functions.php");
+$n=$_POST["nom"];
+$g=$_POST["groupe"];
+$e=$_POST["enseignant"];
+$p=$_POST["pfe"];
+addEtudiant($n,$g,$e,$p);
+header("location:liste.php");
+?>
